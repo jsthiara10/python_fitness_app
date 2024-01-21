@@ -73,14 +73,67 @@ APPROACH TO SOLVE THIS PROBLEM:
 
 #6. Simple while loop program to refresh knowledge
 
-i = 1
-while i < 6:
-    print(i)
-    i += 1 
+# i = 1
+# while i < 6:
+#     print(i)
+#     i += 1 
 
 #i is a value of 1
 #since its value is 1, it's going to print numbers 1 to 5
 # i += 1 basically increments i by 1 in each iteration
 # that is why i is going up from 1 to 2 to 3 to 4 to 5, but stops at 5
+
+
+#7. Basic functions
+
+# def hello_world():
+#     print("hello world")
+
+
+# hello_world() 
+
+# # I am calling hello_world function. It's going to print whatever is in the hello_world function, which in this case is "hello world"
+
+#8. Function within a function
+
+# def food():
+#     print("apple")
+
+# def fruit():
+#     food()
+
+# fruit() #this function call calls the function fruit
+#         #fruit contains a call to the function food
+#         #the function 'food' contains a print statement to print out the string "apple"
+#         #therefore, calling the function fruit() will print out the string "apple"
+
+#9. Basic input program within a function
+
+# def question():
+#     print("Please type in your name")
+#     name = input()
+#     print ("Hello", name, "welcome to the program. Enter gym or home")
+    
+#     response = input()
+#     if response == "gym":
+#         print("gym program")
+#     elif response == "home":
+#         print("home program")
+
+# question()
+
+#10. Input program - using multiple functions
+
+def question1():
+    print ("Hello")
+
+def question2():
+    question1()
+
+def question3():
+    question2()
+
+
+question3() #this function will print "Hello". Follow the process flow of the functions
 
 
